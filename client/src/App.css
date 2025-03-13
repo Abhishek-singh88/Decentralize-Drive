@@ -1,0 +1,157 @@
+/* General Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Full-page Background Styling */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  background-size: cover;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* App Container */
+.App {
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.App:hover {
+  transform: scale(1.02);
+}
+
+/* Logo Animation */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Header */
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Title */
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Paragraph Styling */
+p {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Button Styling */
+button {
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: #ff9800;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #e68900;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(255, 152, 0, 0.5);
+}
+
+/* File Upload Section */
+input {
+  padding: 10px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 10px;
+}
+
+/* Image Display */
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.image-list img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-list img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Social Share Button */
+.share {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 12px;
+  background: #d32f2f;
+  width: 70px;
+  height: 45px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  transition: all 0.3s ease;
+}
+
+.share:hover {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.24), 0 17px 50px rgba(0, 0, 0, 0.19);
+  background: #b71c1c;
+}
